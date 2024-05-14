@@ -1,0 +1,205 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body {
+    overflow-x: hidden;    
+}
+
+header {        
+    nav {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+        z-index: 10;            
+        ul {
+            display: flex;                
+            li {
+                list-style-type: none;
+                flex: 1 1 auto;
+                text-align: center;                    
+                padding: 1rem;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: rgb(84, 84, 255);                        
+                    a {                            
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+                a {
+                    color: rgb(84, 84, 255);
+                    text-decoration: none;                                             
+                }
+            }
+        }
+    }
+}
+
+// 作品集區域
+div.portFolio {
+        min-height: 30vh;
+        border: rgb(255, 237, 159) 5px solid;
+        div.portFolioTop {
+            display: flex;
+            height: 100%;
+            font-size: 24px;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.work {            
+            
+            li.card {
+                width: 23rem;
+                border-color: red;
+            }
+        }
+}
+
+main {
+    section.main-area {
+        min-height: 70vh;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        div.info {
+            flex-basis: 450px;
+            padding: 1rem;
+            h1 {
+                font-size: 3.2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            a {
+                color: white;
+                background-color: rgb(54, 212, 138);
+                padding: 0.25rem 0.5rem;
+                font-size: 1.5rem;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 2rem;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        div.myPhoto {
+            flex-basis: 450px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    section.about-me {
+        background-color: rgb(231, 255, 233);
+        padding: 5rem 0rem;
+        display: flex;
+        justify-content: center;
+        section.description {
+            width: 50%;
+            text-align: center;
+            h2 {
+                font-size: 2rem;
+            }
+            .progress-bar-area p {
+                margin-top: 1rem;
+            }
+        }
+    }
+    section.resume {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        section.table {
+            flex: 5 0 500px;
+            padding: 2rem;
+            table {
+                --bs-table-bg: none;
+                border-collapse: collapse;
+                tr {
+                    border-bottom: 2px solid gray;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        background-color: rgb(184, 255, 222);
+                    }
+                    td {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+        section.picture {
+            flex: 1 1 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            img {
+                width: 80%;
+            }
+            div.greenRect {
+                width: 30vw;
+                height: 90vh;
+                border: 10px solid rgb(195, 255, 200);
+                position: absolute;
+                top: 30px;
+                left: 80px;
+                z-index: -1;
+            }
+            div.greenRect2 {
+                width: 50vw;
+                height: 40vh;
+                border: 10px solid rgb(195, 255, 200);
+                position: absolute;
+                top: 300px;
+                left: -300px;
+                z-index: -1;
+            }
+            div.greenRect3 {
+                width: 50vw;
+                height: 40vh;
+                border: 10px solid rgb(195, 255, 200);
+                position: absolute;
+                top: 0px;
+                left: -100px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body main section.about-me section.description {
+      width: 80%;
+    }
+    body main section.resume {
+      overflow-x: auto;
+    }
+    body main section.resume section.picture div.greenRect,
+    body main section.resume section.picture div.greenRect2,
+    body main section.resume section.picture div.greenRect3 {
+      display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    body nav {
+      position: static;
+    }
+    body nav ul {
+      flex-direction: column;
+    }
+}

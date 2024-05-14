@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay 的個人網頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/bubble.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">關於 Jay</a></li>          
+                <li><a href="./Project_1/index.html" target="_blank">圍棋網站</a></li>
+                <li><a href="./Project_2/index.html" target="_blank">日本旅遊網站</a></li>
+                <li><a href="./School/index.html" target="_blank">學校作品</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="background-wrap">
+            <div class="bubble x1"></div>
+            <div class="bubble x2"></div>
+            <div class="bubble x3"></div>
+            <div class="bubble x4"></div>
+            <div class="bubble x5"></div>
+            <div class="bubble x6"></div>
+            <div class="bubble x7"></div>
+            <div class="bubble x8"></div>
+            <div class="bubble x9"></div>
+            <div class="bubble x10"></div>
+        </div>
+        <section class="main-area">
+            <div class="info">
+                <h1>嗨，我是Jay!</h1>
+                <h2>我是一位來自台灣的網頁前端工程師，專長在網頁前端開發，目前正持續學習軟體、程式相關的知識。</h2>
+            </div>
+            <div class="myPhoto">
+                <img src="./images/myCard.png" alt="個人照片">
+            </div>
+        </section>
+        <!-- 關於我 -->
+        <section class="about-me">
+            <section class="description">
+                <h2>關於我的一些事情</h2>
+                <p>主要興趣是網頁設計與其它程式相關的領域，在進入嶺東科大之前都是在製造業中打轉，因為想轉職到IT產業，所以回去補大學學歷。</p>
+                <p>我認為懂的知識與工具是越多越好，懂得越多的知識與工具，不只做事時能省下很多時間，在協作進行溝通時也能更了解夥伴需要的幫助是什麼。</p>
+                <p>我的主要技能是：HTML、CSS、JavsScript、Photoshop、略懂影片剪輯(Adobe Pr)。</p>
+                <div class="progress-bar-area">
+                    <ul class="features_box clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="./images/logo_HTML-260x150.png" alt="html5">
+                                <h3>Html5</h3>
+                                <span>主流前端網站設計的基礎。</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/logo_RWD-260x150.png" alt="responsive">
+                                <h3>響應式網站設計</h3>
+                                <span>根據視窗大小自動調整網頁圖文內容</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/logo_JS-260x150.png" alt="javascript">
+                                <h3>JavaScript</h3>
+                                <span>讓網站不只呈現靜態的內容</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <!-- 簡歷 -->
+        <section class="resume">
+            <section class="table">
+                <table>
+                    <tr style="border-top: 2px solid gray">
+                        <td style="width: 20%">自我簡介</td>
+                        <td style="width: 80%">
+                            畢業於嶺東科技大學資訊管理系。興趣是與電腦相關的事情，所以從製造業轉職到IT領域，在IT領域中是個社會新鮮人，職場與學習時使用的程式或工具不一定相同，所以期望能盡快進入職場累積經驗。
+                            曾幫公司通過ISO9001認證。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>學歷</td>
+                        <td>嶺東科技大學 資訊管理系</td>
+                    </tr>
+                    <tr>
+                        <td>經歷</td>
+                        <td>
+                            <ol>
+                                <li>大立光 工程人員</li>
+                                <li>懋豐工廠 QC</li>
+                                <li>嶺東科技大學 行政人員</li>
+                                <li>普拉瑞斯 助理工程師</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>語言</td>
+                        <td>
+                            <ul>
+                                <li>中文:精通</li>
+                                <li>台語:精通</li>
+                                <li>英文:略懂</li>
+                            </ul>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>專長</td>
+                        <td>
+                            <img src="./ICONS/icons8-html-5.svg" alt="HTML5" />
+                            <img src="./ICONS/icons8-css3.svg" alt="CSS3" />
+                            <img src="./ICONS/icons8-javascript.svg" alt="JavaScript" />
+                            <img src="./ICONS/icons8-photoshop.svg" alt="Photoshop" />
+                    </tr>                    
+                </table>
+            </section>
+            <section class="picture">
+                <img src="./images/myPhoto.jpg" alt="個人照片" />
+                <div class="greenRect"></div>
+                <div class="greenRect2"></div>
+                <div class="greenRect3"></div>
+            </section>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

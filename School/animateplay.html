@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>AnimatePlay</title>
+</head>
+<style>
+.box
+{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation-name: move ;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes move
+{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 200px;
+        background-color: brown;
+        border-radius: 100%;
+    }
+    50%{
+        left: 0px;
+        background-color: blueviolet;
+        border-radius: 0%;
+    }
+    75%{
+        left: 200px;
+        background-color: chartreuse;
+        border-radius: 100%;
+    }
+    100%{
+        left: 0;
+        background-color: aquamarine;
+        border-radius: 0%;
+    }
+
+}
+</style>
+<body>
+<div class="box"></div>    
+</body>
+</html>
