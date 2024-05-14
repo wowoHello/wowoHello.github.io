@@ -42,23 +42,6 @@ header nav ul li a {
   text-decoration: none;
 }
 
-div.portFolio {
-  min-height: 30vh;
-  border: rgb(255, 237, 159) 5px solid;
-}
-div.portFolio div.portFolioTop {
-  display: flex;
-  height: 100%;
-  font-size: 24px;
-  font-weight: bolder;
-  justify-content: center;
-  align-items: center;
-}
-div.portFolio ul.work li.card {
-  width: 23rem;
-  border-color: red;
-}
-
 main section.main-area {
   min-height: 70vh;
   background-color: white;
@@ -104,14 +87,87 @@ main section.about-me {
   justify-content: center;
 }
 main section.about-me section.description {
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 main section.about-me section.description h2 {
   font-size: 2rem;
 }
-main section.about-me section.description .progress-bar-area p {
+main section.about-me section.description p {
   margin-top: 1rem;
+}
+main section.about-me section.description .progress-bar-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.about-me section.description .progress-bar-area .features_box {
+  list-style: none;
+}
+main section.about-me section.description .progress-bar-area .features_box li {
+  float: left;
+  border: 1px solid #dddddd;
+  width: 293.3px;
+  box-shadow: 0px 4px 4px #dddddd;
+  margin: 10px;
+}
+main section.about-me section.description .progress-bar-area .features_box li:hover {
+  border: 1px solid #00cc99;
+  box-shadow: 0px 5px 5px #dddddd;
+  transition: all 0.5s;
+}
+main section.about-me section.description .progress-bar-area .features_box li h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: black;
+}
+main section.about-me section.description .progress-bar-area .features_box li span {
+  font-size: 1rem;
+  color: gray;
+  text-align: justify;
+  display: inline-block;
+}
+main section.about-me section.description .progress-bar-area .features_box li img {
+  display: block;
+  margin: 0px auto;
+}
+main section.about-me section.description .progress-bar-area .features_box li a {
+  display: block;
+  padding: 10px 15px 20px 15px;
+  text-decoration: none;
+}
+main section.about-me section.description .progress-bar-area .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main section.cardUI {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+main section.cardUI div.card {
+  display: flex;
+  width: 20rem;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+main section.cardUI div.card img {
+  max-width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #dddddd;
+}
+main section.cardUI div.card span {
+  font-size: 24px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: bold;
+  font-style: normal;
 }
 main section.resume {
   display: flex;

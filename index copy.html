@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay 的個人網頁</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style copy.css">
     <link rel="stylesheet" href="./style/bubble.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,6 +35,7 @@
             <div class="bubble x9"></div>
             <div class="bubble x10"></div>
         </div>
+        <!-- 開頭 -->
         <section class="main-area">
             <div class="info">
                 <h1>嗨，我是Jay!</h1>
@@ -49,66 +53,48 @@
                 <p>我認為懂的知識與工具是越多越好，懂得越多的知識與工具，不只做事時能省下很多時間，在協作進行溝通時也能更了解夥伴需要的幫助是什麼。</p>
                 <p>我的主要技能是：HTML、CSS、JavsScript、Photoshop、略懂影片剪輯(Adobe Pr)。</p>
                 <div class="progress-bar-area">
-                    <p>HTML</p>
-                    <div class="progress">
-                        <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-info"
-                            role="progressbar"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                            style="width: 100%"
-                        ></div>
-                    </div>
-                    <p>CSS</p>
-                    <div class="progress">
-                        <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-                            role="progressbar"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                            style="width: 90%"
-                        ></div>
-                    </div>
-                    <p>JavaScript</p>
-                    <div class="progress">
-                        <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                            role="progressbar"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                            style="width: 70%"
-                        ></div>
-                    </div>
-                    <p>Photoshop</p>
-                    <div class="progress">
-                        <div
-                            class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-                            role="progressbar"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                            style="width: 75%"
-                        ></div>                        
-                    </div>
+                    <ul class="features_box clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="./images/logo_HTML-260x150.png" alt="html5">
+                                <h3>Html5</h3>
+                                <span>主流前端網站設計的基礎。</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/logo_RWD-260x150.png" alt="responsive">
+                                <h3>響應式網站設計</h3>
+                                <span>根據視窗大小自動調整網頁圖文內容</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/logo_JS-260x150.png" alt="javascript">
+                                <h3>JavaScript</h3>
+                                <span>讓網站不只呈現靜態的內容</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </section>
-        <!-- 作品集 -->
-        <section>
-            <div class="portFolio">
-                <div class="portFolioTop">
-                    作品集
-                </div>
-                <ul class="work">
-                    <li class="card">
-
-                    </li>
-                </ul>
+        <!-- 作品卡片 -->
+        <section class="cardUI">
+            <div class="card">
+                <img src="./images/cardDemo.png" alt="">
+                <span>圍棋網站</span>
+            </div>
+            <div class="card">
+                <img src="./images/cardDemo.png" alt="">
+                <span>日本旅遊網</span>
+            </div>
+            <div class="card">
+                <img src="./images/cardDemo.png" alt="">
+                <span>成績計算</span>
             </div>
         </section>
+    
         <!-- 簡歷 -->
         <section class="resume">
             <section class="table">
