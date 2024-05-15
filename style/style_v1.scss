@@ -45,7 +45,6 @@ header {
 }
 
 main {
-    // 開頭
     section.main-area {
         min-height: 70vh;
         background-color: white;
@@ -84,7 +83,6 @@ main {
             }
         }
     }
-    // 關於我
     section.about-me {
         background-color: rgb(231, 255, 233);
         padding: 5rem 0rem;
@@ -103,7 +101,7 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;     
-                .features_box {                    
+                .features_box {
                     list-style: none;
                     li {
                         float: left;
@@ -153,47 +151,6 @@ main {
             }
         }
     }
-
-    // 作品卡片
-    section.cardUI {
-        display: flex;
-        margin: 10px;
-        justify-content: center;
-        align-items: center;
-        div.card {
-            display: flex;
-            width: 20rem;
-            margin: 10px;
-            padding: 10px;
-            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
-            justify-content: center;
-            align-items: center;
-            transition: scale(1,1);
-            transition: all .5s ease-out;
-            &:hover {
-                border: 1px solid #00cc99;
-                transform:scale(1.05,1.05);
-            }
-            a {
-                text-align: center;
-                text-decoration:none;
-                color: black;                
-                img {
-                    max-width: 100%;
-                    padding-bottom: 5px;
-                    border-bottom: 2px solid #dddddd;
-                }
-                span {
-                    font-size: 24px;
-                    font-family: "Zen Maru Gothic", serif;
-                    font-weight: bold;
-                    font-style: normal;
-                }    
-            }
-        }
-    }
-
-    // 簡歷
     section.resume {
         display: flex;
         flex-wrap: wrap;
@@ -255,47 +212,6 @@ main {
         }
     }
 }
-
-@media screen and (max-width: 768px) {
-    section.cardUI {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        justify-content: center;
-        align-items: center;
-        div.card {
-            display: flex;
-            width: 20rem;
-            margin: 10px;
-            padding: 10px;
-            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
-            justify-content: center;
-            align-items: center;
-            transition: scale(1,1);
-            transition: all .5s ease-out;
-            &:hover {
-                border: 1px solid #00cc99;
-                transform:scale(1.05,1.05);
-            }
-            a {
-                text-align: center;
-                text-decoration:none;
-                color: black;
-                img {
-                    max-width: 100%;
-                    padding-bottom: 5px;
-                    border-bottom: 2px solid #dddddd;
-                }
-                span {
-                    font-size: 24px;
-                    font-family: "Zen Maru Gothic", serif;
-                    font-weight: bold;
-                    font-style: normal;
-                }    
-            }
-        }
-    }
-  }
 
 @media screen and (max-width: 800px) {
     body main section.about-me section.description {

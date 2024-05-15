@@ -144,6 +144,43 @@ main section.about-me section.description .progress-bar-area .clearfix::after {
   display: table;
   clear: both;
 }
+main section.cardUI {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+main section.cardUI div.card {
+  display: flex;
+  width: 20rem;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  transition: scale(1, 1);
+  transition: all 0.5s ease-out;
+}
+main section.cardUI div.card:hover {
+  border: 1px solid #00cc99;
+  transform: scale(1.05, 1.05);
+}
+main section.cardUI div.card a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+main section.cardUI div.card a img {
+  max-width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #dddddd;
+}
+main section.cardUI div.card a span {
+  font-size: 24px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: bold;
+  font-style: normal;
+}
 main section.resume {
   display: flex;
   flex-wrap: wrap;
@@ -205,6 +242,46 @@ main section.resume section.picture div.greenRect3 {
   z-index: -1;
 }
 
+@media screen and (max-width: 768px) {
+  section.cardUI {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  section.cardUI div.card {
+    display: flex;
+    width: 20rem;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    transition: scale(1, 1);
+    transition: all 0.5s ease-out;
+  }
+  section.cardUI div.card:hover {
+    border: 1px solid #00cc99;
+    transform: scale(1.05, 1.05);
+  }
+  section.cardUI div.card a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  section.cardUI div.card a img {
+    max-width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #dddddd;
+  }
+  section.cardUI div.card a span {
+    font-size: 24px;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
 @media screen and (max-width: 800px) {
   body main section.about-me section.description {
     width: 80%;
