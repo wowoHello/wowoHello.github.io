@@ -94,19 +94,22 @@
     </footer>
     <!-- 簡易輪播圖 -->
     <script>
+        const images = [
+            "./images/日本櫻花.jpg",
+            "./images/京都古城.jpg",
+            "./images/大阪街頭.jpg"
+        ];
+
+        // 預先加載圖片
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        let currentIndex = 0;
         setInterval(() => {
-          let topBackground = document.querySelector("section.background-img");
-          if (
-            topBackground.style.backgroundImage == 'url("./images/日本櫻花.jpg")'
-          ) {
-            topBackground.style.backgroundImage = 'url("./images/京都古城.jpg")';
-          } else if (
-            topBackground.style.backgroundImage == 'url("./images/京都古城.jpg")'
-          ) {
-            topBackground.style.backgroundImage = 'url("./images/大阪街頭.jpg")';
-          } else {
-            topBackground.style.backgroundImage = 'url("./images/日本櫻花.jpg")';
-          }
+            currentIndex = (currentIndex + 1) % images.length;
+            document.querySelector("section.background-img").style.backgroundImage = `url("${images[currentIndex]}")`;
         }, 3000);
       </script>
 </body>
