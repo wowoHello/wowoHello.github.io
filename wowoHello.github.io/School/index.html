@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <!-- bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- bootstrapt 5 JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+  <!-- icon change -->
+  <link rel="icon" href="portfolio_img/pigbro_icon.png">
+  <style>
+    body{
+      background: rgb(214, 214, 214);
+      user-select: none;
+    }
+
+    .navbar{
+      box-shadow: 0px 3px 5px rgba(65, 23, 23, 0.7);
+    }
+
+    /* carouse CSS */
+    iframe{
+      background: rgb(227, 227, 227);
+      width: 100%;
+      height: 35vw;
+    }
+
+    .carouselHTML_01{
+      display: none;
+    }
+
+    .carouselHTML_02{
+      display: none;
+    }
+    /* End of carouse CSS */
+
+  </style>
+    
+</head>
+<body>
+<!-- navbar start -->
+  <div class="navbar container-fluid bg-dark">
+    <a class="navbar-brand" href="../index.html">
+      <img src="portfolio_img/pigbro_logo.png" class="d-none d-md-block">
+    </a>
+    <img src="portfolio_img/navbar_Title.png">
+    <!-- party member card -->
+    <img src="portfolio_img/07_card.png" class="rounded-pill">
+    <!-- End of party member card -->
+  </div>
+<!-- End of navbar -->
+
+<div class="container-fluid">
+<!-- carousel -->
+<iframe src="puipui/carousel_0607.html" class="carouselHTML_01"></iframe>
+<iframe src="Milk/carousel_0717.html" class="carouselHTML_02"></iframe>
+<!-- End of carousel -->
+
+<!-- card image -->
+    <div class="panel panel-primary row" style="margin: 7px;">
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="puipui/jayimg/carousel_01.png" class="card-img-top" alt="PuiPui天竺鼠車車" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="font-family: 'Noto Sans TC', sans-serif;">PuiPui天竺鼠車車</h5>
+          <p class="card-text" style="text-align: justify;">自己設定主題，並為其架設網頁。</p><br>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">jQuery控制圖片縮放</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">jQuery偵測圖片顯示與隱藏條件</p>                                    
+        </div>
+        <!-- button -->
+        <div class="card-body text-center">
+          <a href="#" id="Check_01" class="btn btn-primary">內容預覽</a>
+          <a href="puipui/jaypage.html" target="_blank" class="btn btn-primary">進入網頁</a>
+        </div>
+        <!-- End of button -->
+      </div>
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="Milk/image/title_milkshop.png" class="card-img-top" alt="迷客夏" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="text-align: center; font-family: 'Noto Sans TC', sans-serif;">Milkshop迷客夏</h5>
+          <p class="card-text" style="text-align: justify;">以迷客夏飲料店為主題設計網頁，使用bootstrap5進行RWD的設計</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">套用bootstrap5版面</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">利用CSS的@keyframes製作圖片動畫</p>              
+        </div>
+        <!-- button -->
+        <div class="card-body text-center">
+          <a href="#" id="Check_02" class="btn btn-primary">內容預覽</a>
+          <a href="Milk/A89B007_MWDfinal_Product.html" target="_blank" class="btn btn-primary">進入網頁</a>
+        </div>
+        <!-- End of button -->
+      </div>
+<!-- 練習 -->
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="IDcard.png" class="card-img-top" alt="Animateplay" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="text-align: center; font-family: 'Noto Sans TC', sans-serif;">動態身份卡</h5>
+          <p class="card-text" style="text-align: justify;">製作小組成員身份卡網頁</p><br>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">hover效果</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">&emsp;</p>          
+        </div>
+        <!-- button -->
+        <div class="card-body text-center">
+          <a href="IDcard.html" target="_blank" class="btn btn-primary">進入網頁</a>
+        </div>
+        <!-- End of button -->
+      </div>
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="keyframesmove.png" class="card-img-top" alt="Animateplay" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="text-align: center; font-family: 'Noto Sans TC', sans-serif;">Animateplay</h5>
+          <p class="card-text" style="text-align: justify;">利用CSS的keyframes實現移動與變形</p><br>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">keyframes的move功能</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">&emsp;</p>          
+        </div>
+        <!-- button -->
+        <div class="card-body text-center">
+          <a href="animateplay.html" target="_blank" class="btn btn-primary">進入網頁</a>
+        </div>
+        <!-- End of button -->
+      </div>
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="Form.png" class="card-img-top" alt="Form" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="text-align: center; font-family: 'Noto Sans TC', sans-serif;">Form</h5>
+          <p class="card-text" style="text-align: justify;">設計簡單的表單頁面</p><br>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">&emsp;</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">&emsp;</p>
+          <!-- button -->
+          <div class="card-body text-center">          
+            <a href="form.html" target="_blank" class="btn btn-primary">進入網頁</a>
+          </div>
+          <!-- End of button -->
+        </div>
+      </div>
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="cardhover.png" class="card-img-top" alt="cardhover" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="text-align: center; font-family: 'Noto Sans TC', sans-serif;">Cardhover</h5>
+          <p class="card-text" style="text-align: justify;">滑鼠移入圖片彈出圖片說明</p><br>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">使用CSS實現功能</p>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">&emsp;</p>
+          <!-- button -->
+          <div class="card-body text-center">
+            <a href="cardhover.html" target="_blank" class="btn btn-primary">進入網頁</a>
+          </div>
+          <!-- End of button -->
+        </div>
+      </div>
+      <div class="card col-xs-4 col-md-4" style="width: 23rem; box-shadow: 0px 2px 5px; margin: 10px;">
+        <img src="ScrollingEffect.png" class="card-img-top" alt="ScrollingEffect" style="border-bottom:1px solid; padding: 20px;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="text-align: center; font-family: 'Noto Sans TC', sans-serif;">ScrollingEffect</h5>
+          <p class="card-text" style="text-align: justify;">網站元件跟著頁面卷軸移動</p><br>
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">使用JS實現功能</p> 
+          <p class="card-text" style="font-family: 'Arial';background-image:url(portfolio_img/bg.png); box-shadow:0 1px 2px rgba(0,0,0,0.7)  inset ;">&emsp;</p>         
+        </div>
+        <!-- button -->
+        <div class="card-body text-center">
+          <a href="JayScrollingEffect.html" target="_blank" class="btn btn-primary">進入網頁</a>
+        </div>
+        <!-- End of button -->
+      </div>
+    </div>
+<!-- End of card image -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#Check_01").click(function(){
+      $(".carouselHTML_01").fadeToggle();
+      $(".carouselHTML_02").css("display","none");
+      // $(".css").css("display","none");
+      // $(".css").css("display","none");
+    })
+    $("#Check_02").click(function(){
+      $(".carouselHTML_02").fadeToggle();
+      $(".carouselHTML_01").css("display","none");
+    // //   $(".css").css("display","none");
+    // //   $(".css").css("display","none");
+    })
+    // $("#Check_03").click(function(){
+    //   $(".css").fadeToggle();
+    //   $(".css").css("display","none");
+    //   $(".css").css("display","none");
+    //   $(".css").css("display","none");
+    // })
+    // $("#Check_04").click(function(){
+    //   $(".css").fadeToggle();
+    //   $(".css").css("display","none");
+    //   $(".css").css("display","none");
+    //   $(".css").css("display","none");
+    // })
+  })
+  </script>
+</div>
+</body>
+</html>
