@@ -11,25 +11,30 @@ body {
   flex-direction: column;
   align-items: center;
 }
-body #myCanvas {
+
+#myCanvas {
   border: 5px solid lightgreen;
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body #myScore {
+
+#myScore {
+
   margin-top: 1rem;
 }
-body #myScore, body #myScore2 {
+
+#myScore, #myScore2 {
   color: white;
   font-size: 1.5rem;
   padding: 10px;
 }
-body #Start {
+
+#Start {
   padding: 0.25rem 0.5rem;
   background-color: yellow;
   font-size: 1.15rem;
   display: block;
   margin-top: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
