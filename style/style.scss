@@ -204,6 +204,10 @@ main {
             table {
                 --bs-table-bg: none;
                 border-collapse: collapse;
+                img {
+                    max-width: 48px;
+                    max-height: 48px;
+                }
                 tr {
                     border-bottom: 2px solid gray;
                     transition: all 0.2s ease;
