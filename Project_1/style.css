@@ -147,7 +147,7 @@ div.competition div.text h3 {
   font-size: 2rem;
 }
 .china table {
-  max-width: 1000px;
+  min-width: 1000px;
 }
 .china th {
   background-color: rgb(86, 224, 192);

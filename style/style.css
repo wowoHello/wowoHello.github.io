@@ -194,6 +194,10 @@ main section.resume section.table table {
   --bs-table-bg: none;
   border-collapse: collapse;
 }
+main section.resume section.table table img {
+  width: 48px;
+  height: 48px;
+}
 main section.resume section.table table tr {
   border-bottom: 2px solid gray;
   transition: all 0.2s ease;
