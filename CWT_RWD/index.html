@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWT 教師網切版</title>
+  <link rel="stylesheet" href="CSSreset.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- fb嵌入JS SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v22.0"></script>
+  <!-- 上方導覽列 -->
+  <div class="container-fluid top-bg d-none d-lg-block"></div>
+  <header class="w-100 p-0 border-bottom">
+    <nav class="container-1280 d-flex flex-column flex-md-row p-0">
+      <input type="checkbox" id="menu_control" />
+      <div class="logo-bg d-flex flex-row justify-content-between">
+        <a href="/">
+          <img src="./images/logo.png" alt="LOGO" width="236px" />
+        </a>
+        <label for="menu_control" class="menuBtn pt-2 me-2"></label>
+      </div>
+      <!-- PC版導覽列 -->
+      <ul class="cwt-navbar p-0 w-100 d-flex flex-column flex-md-row">
+        <li>
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static">
+              <span class="zh">教師招募</span>
+              <span class="en">RECRUIT</span>
+            </div>
+            <img class="downTag mobile-block" src="./images/arrow-down-sign-to-navigate.png" alt="向下箭頭" />
+            <div class="nav-hover-block">
+              <span class="en">RECRUIT</span>
+              <span class="zh">教師招募</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static">
+              <span class="zh">接案中心</span>
+              <span class="en">TAKE THE CASE</span>
+            </div>
+            <div class="nav-hover-block">
+              <span class="en">TAKE THE CASE</span>
+              <span class="zh">接案中心</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static">
+              <span class="zh">個人專區</span>
+              <span class="en">PERSONAL</span>
+            </div>
+            <img class="downTag mobile-block" src="./images/arrow-down-sign-to-navigate.png" alt="向下箭頭" />
+            <div class="nav-hover-block">
+              <span class="en">PERSONAL</span>
+              <span class="zh">個人專區</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static">
+              <span class="zh">新聞公告</span>
+              <span class="en">HOT NEWS</span>
+            </div>
+            <div class="nav-hover-block">
+              <span class="en">HOT NEWS</span>
+              <span class="zh">新聞公告</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static">
+              <span class="zh">心得交流</span>
+              <span class="en">EXPERIENCE</span>
+            </div>
+            <div class="nav-hover-block">
+              <span class="en">EXPERIENCE</span>
+              <span class="zh">心得交流</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static">
+              <span class="zh">關於CWT</span>
+              <span class="en">ABOUT CWT</span>
+            </div>
+            <div class="nav-hover-block">
+              <span class="en">ABOUT CWT</span>
+              <span class="zh">關於CWT</span>
+            </div>
+          </a>
+        </li>
+        <li class="d-flex d-md-none mobile-only">
+          <a class="nav-link mx-2" href="#">
+            <div class="nav-text-static d-flex flex-row">
+              <img src="./images/user (1).png" alt="會員登入" width="24px" />
+              <div>
+                <span class="zh">帳號登入</span>
+                <span class="en">MEMBER LOGIN</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- banner動態圖片 -->
+  <section class="w-100">
+    <div class="container-1280">
+      <div class="banner-bg ">
+        <div class="lottie-overlay" id="lottie-bg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主要內容區塊 -->
+  <main class="w-100 flex-grow-1 my-2">
+    <div class="container-1280 container-fluid">
+      <div class="row">
+        <!-- 左下導覽列 -->
+        <aside class="col-md-3 d-none d-md-flex flex-column align-items-center p-0" style="max-width: 276px;">
+          <a href="#">
+            <img class="figure-img img-fluid" src="./images/teacher_join.jpg" alt="教師招募" />
+          </a>
+          <a href="#">
+            <img class="figure-img img-fluid" src="./images/bt_caseo.gif" alt="接案中心" />
+          </a>
+          <a href="#">
+            <img class="figure-img img-fluid" src="./images/bt_personalo.gif" alt="個人專區" />
+          </a>
+          <a href="#">
+            <img class="figure-img img-fluid" src="./images/bt_experienceo.gif" alt="心得交流" />
+          </a>
+          <a href="#">
+            <img class="figure-img img-fluid" src="./images/bt_honoro.gif" alt="榮譽榜" />
+          </a>
+          <div class="fb-page" data-href="https://www.facebook.com/CWTfans/?ref=embed_page" data-tabs="timeline"
+            data-width="250" data-height="370" data-small-header="true" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/CWTfans/?ref=embed_page" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/CWTfans/?ref=embed_page">CWTC 中文能力測驗中心</a>
+            </blockquote>
+          </div>
+        </aside>
+        <!-- 右下主要內容 -->
+        <div class="col-12 col-md-9">
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="./images/title_01.gif" alt="最新新聞公告Title" />
+            <img src="./images/bt_more01.gif" alt="觀看更多" />
+          </div>
+          <table class="mb-3">
+            <tbody class="news-bg rounded-circle text-nowrap">
+              <tr>
+                <td class="text-nowrap p-2 w-100">
+                  <img src="./images/ic_arrow01.gif" alt="小箭頭" />
+                  <span>【聲明稿】官方出版品與正式測驗試題來源之聲明</span>
+                  <img src="./images/ic_new01.gif" alt="新消息" />
+                </td>
+                <td>
+                  <img src="./images/ic_line01.gif" alt="直線" />
+                </td>
+                <td class="p-2 w-auto">2025/5/26</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="line_01">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="text-nowrap p-2">
+                  <img src="./images/ic_arrow01.gif" alt="小箭頭" />
+                  <span>【優惠活動】提升溝通力，出版品滿額免運！</span>
+                </td>
+                <td>
+                  <img src="./images/ic_line01.gif" alt="直線" />
+                </td>
+                <td class="p-2">2025/3/4</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="line_01">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="text-nowrap p-2">
+                  <img src="./images/ic_arrow01.gif" alt="小箭頭" />
+                  <span>【2025夏季全國大會考】火熱報名中</span>
+                </td>
+                <td>
+                  <img src="./images/ic_line01.gif" alt="直線" />
+                </td>
+                <td class="p-2">2025/3/3</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="line_01">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="./images/title_02.gif" alt="案件總覽" />
+            <img src="./images/bt_more01.gif" alt="觀看更多" />
+          </div>
+          <section class="case-table">
+            <div class="container-fluid text-center">
+              <div class="row first text-white">
+                <div class="col-2 col-md-1 py-1 border border-white">#</div>
+                <div class="col-3 col-md-2 py-1 border border-white">
+                  專案性質
+                </div>
+                <div class="col-4 col-md-2 py-1 border border-white">
+                  批閱期限
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  報名截止
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  批閱篇數
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  需求人數
+                </div>
+                <div class="col-md-1 py-1 border border-white pc-table">
+                  狀態
+                </div>
+                <div class="col-3 py-1 border border-white more-message">
+                  更多資訊
+                </div>
+              </div>
+              <div class="row clickopen">
+                <div class="col-2 col-md-1 py-1 border border-white num-bg text-white p-0">
+                  25059
+                </div>
+                <div class="col-3 col-md-2 py-1 border border-white">
+                  批閱
+                </div>
+                <div class="col-4 col-md-2 py-1 border border-white">
+                  2025/05/22 - 2025/05/29(8天)
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  2025/5/23
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  15 - 40
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  174(177)
+                </div>
+                <div class="col-md-1 py-1 border border-white text-success pc-table">
+                  進行中
+                </div>
+                <div class="col-3 py-1 border border-white more-message text-success">
+                  進行中(詳細)
+                </div>
+              </div>
+              <div class="row border-start border-end border-white justify-content-center test-block mobile-table">
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/schedule.png" class="card-img-top mb-1" alt="報名截止圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">報名截止</p>
+                    <p class="card-text text-success text-nowrap">
+                      2025/5/23
+                    </p>
+                  </div>
+                </div>
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/rules.png" class="card-img-top mb-1" alt="批閱篇數圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">批閱篇數</p>
+                    <p class="card-text text-success">15 - 40</p>
+                  </div>
+                </div>
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/team.png" class="card-img-top mb-1" alt="需求人數圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">需求人數</p>
+                    <p class="card-text text-success text-nowrap">174(177)</p>
+                  </div>
+                </div>
+                <!-- 進行中圖卡bak
+         <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 20%">
+          <img src="./loading.png" class="card-img-top mb-1" alt="Loading圖">
+          <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+            <p class="card-text mb-1">狀　態</p>
+            <p class="card-text text-success text-nowrap">進行中</p>
+          </div>
+        </div> 
+        -->
+              </div>
+              <div class="row clickopen">
+                <div class="col-2 col-md-1 py-1 border border-white num-bg text-white p-0">
+                  25059
+                </div>
+                <div class="col-3 col-md-2 py-1 border border-white">
+                  批閱
+                </div>
+                <div class="col-4 col-md-2 py-1 border border-white">
+                  2025/05/22 - 2025/05/29(8天)
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  2025/5/23
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  15 - 40
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  604(604)
+                </div>
+                <div class="col-md-1 py-1 border border-white text-danger pc-table">
+                  已關閉
+                </div>
+                <div class="col py-1 border border-white text-danger more-message">
+                  已關閉(詳細)
+                </div>
+              </div>
+              <div
+                class="row border-start border-end border-bottom border-white justify-content-center test-block mobile-table">
+                <div class="card p-2 m-1 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/schedule.png" class="card-img-top img-fluid mb-1" alt="報名截止圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">報名截止</p>
+                    <p class="card-text text-success text-nowrap">
+                      2025/5/23
+                    </p>
+                  </div>
+                </div>
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/rules.png" class="card-img-top img-fluid mb-1" alt="批閱篇數圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">批閱篇數</p>
+                    <p class="card-text text-success">15 - 40</p>
+                  </div>
+                </div>
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/team.png" class="card-img-top mb-1" alt="需求人數圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">需求人數</p>
+                    <p class="card-text text-success text-nowrap">174(177)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row clickopen">
+                <div class="col-2 col-md-1 py-1 border border-white num-bg text-white p-0">
+                  25059
+                </div>
+                <div class="col-3 col-md-2 py-1 border border-white">
+                  批閱
+                </div>
+                <div class="col-4 col-md-2 py-1 border border-white">
+                  2025/05/22 - 2025/05/29(8天)
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  2025/5/23
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  15 - 40
+                </div>
+                <div class="col-md-2 py-1 border border-white pc-table">
+                  604(604)
+                </div>
+                <div class="col-md-1 py-1 border border-white text-danger pc-table">
+                  已關閉
+                </div>
+                <div class="col py-1 border border-white text-danger more-message">
+                  已關閉(詳細)
+                </div>
+              </div>
+              <div
+                class="row border-start border-end border-bottom border-white justify-content-center test-block mobile-table">
+                <div class="card p-2 m-1 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/schedule.png" class="card-img-top img-fluid mb-1" alt="報名截止圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">報名截止</p>
+                    <p class="card-text text-success text-nowrap">
+                      2025/5/23
+                    </p>
+                  </div>
+                </div>
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/rules.png" class="card-img-top img-fluid mb-1" alt="批閱篇數圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">批閱篇數</p>
+                    <p class="card-text text-success">15 - 40</p>
+                  </div>
+                </div>
+                <div class="card p-2 m-2 shadow-sm bg-body rounded" style="width: 25%">
+                  <img src="./images/team.png" class="card-img-top mb-1" alt="需求人數圖" />
+                  <div class="card-body p-0 d-flex flex-column align-items-center text-nowrap">
+                    <p class="card-text mb-1">需求人數</p>
+                    <p class="card-text text-success text-nowrap">174(177)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="py-3 mt-auto w-100">
+    <div class="container-1280 container-fluid">
+      <div class="row flex-md-row flex-column-reverse">
+        <!-- PC顯示、Mobile隱藏或移到下方 -->
+        <aside class="col-md-4 mb-3 mb-md-0 order-md-1 order-3">
+          <img src="./images/logo.gif" alt="頁尾LOGO_PC">
+        </aside>
+
+        <div class="col-md-8 d-flex flex-column order-md-2 order-1">
+          <div class="mb-2 offset-up d-none d-md-flex justify-content-between">
+            <span>洽詢專線：北區(02)2577-8806#440</span>
+            <span>中區(04)2238-6572#440</span>
+            <span>南區(07)311-9568#440</span>
+          </div>
+          <div class="p-0 mb-2 d-md-none d-flex flex-row justify-content-center">
+            <img class="my-auto w-50" src="./images/logo.gif" alt="頁尾LOGO_Mobile" style="max-width: 236px; max-height: 74px;">
+            <div>
+              洽詢專線：<br />
+              北區(02)2577-8806#440<br />
+              中區(04)2238-6572#440<br />
+              南區(07)311-9568#440
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">CopyRight © 2006-2025 電腦技能基金會版權所有 All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById("lottie-bg"), // 放置動畫的容器
+      renderer: "svg", // 渲染方式：svg / canvas / html
+      loop: true, // 是否循環播放
+      autoplay: true, // 是否自動播放
+      path: "CWTword.json", // 動畫 JSON 路徑
+    });
+  </script>
+</body>
+
+</html>
